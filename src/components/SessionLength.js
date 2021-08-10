@@ -23,9 +23,9 @@ function SessionLength(props) {
 			<section className="interval-container">
 
 				{/* you can just add props.decreaseSession but we need validation */}
-				<button onClick={decreaseCounter}>Down</button>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>Down</button>
 				<p className="interval-length">{props.sessionLength}</p>
-				<button onClick={increaseCounter}>Up</button>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>Up</button>
 			</section>
 		</section>
 
