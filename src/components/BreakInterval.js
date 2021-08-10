@@ -7,6 +7,8 @@ function BreakInterval(props) {
 			return;
 		}
 
+		console.log("down button pressed")	
+		props.decreaseBreak();
 	}
 
 	function increaseCounter() {
@@ -17,7 +19,6 @@ function BreakInterval(props) {
 		console.log("up button pressed")	
 		props.increaseBreak();
 	}
-
 
 	return (
 		<section>
